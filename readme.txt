@@ -3,7 +3,7 @@ Contributors: Lucian Apostol
 Donate link: http://www.ipgp.net
 Tags: widget, ip address lookup, ip lookup, ip locator, ip address locator, ip location, ip address location, find ip, search ip, ip address
 Requires at least: 2.0.2
-Tested up to: 2.8.6
+Tested up to: 2.9
 Stable tag: 0.1
 
 This widget provides your visitors with the ability to get information about ip addresses: country, city, state.
