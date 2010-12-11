@@ -84,7 +84,7 @@ $iplookup['longitude']=$predata[17];
 			<div id="ipgpcountry"><?=$iplookup['country']?></div>
 			<div id="ipgpcity"><?=$iplookup['city']?></div>
 			<div id="ipgpregion"><?=$iplookup['region']?></div>
-			<!--<div id="ipgpisp"><?=$iplookup['isp']?></div> -->
+			<div id="ipgpisp"><?=$iplookup['isp']?></div>
 		</div>
 	</form>
 

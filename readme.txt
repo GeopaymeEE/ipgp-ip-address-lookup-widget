@@ -3,8 +3,8 @@ Contributors: Lucian Apostol
 Donate link: http://www.ipgp.net
 Tags: widget, ip address lookup, ip lookup, ip locator, ip address locator, ip location, ip address location, find ip, search ip, ip address
 Requires at least: 2.0.2
-Tested up to: 2.9
-Stable tag: 0.1
+Tested up to: 3.0.3
+Stable tag: 0.2
 
 This widget provides your visitors with the ability to get information about ip addresses: country, city, state.
 
@@ -36,6 +36,9 @@ The current version of plugin is designed to be placed on the sidebar, in the fu
 If your visitors want to lookup an IP address, the page will refresh and then the data will be shonw under the input box.
 
 == Changelog ==
+
+= 0.2 =
+* Now Internet Service Provider is available
 
 = 0.1 =
 * This is the first version of the plugin
