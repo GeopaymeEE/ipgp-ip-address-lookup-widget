@@ -1,16 +1,16 @@
 === Plugin Name ===
 Contributors: Lucian Apostol
 Donate link: http://www.ipgp.net
-Tags: widget, ip address lookup, ip lookup, ip locator, ip address locator, ip location, ip address location, find ip, search ip, ip address
+Tags: widget, ip address lookup, ip locator, sidebar, shortcode
 Requires at least: 2.0.2
-Tested up to: 3.0.3
-Stable tag: 0.2
+Tested up to: 3.1
+Stable tag: 0.3
 
-This widget provides your visitors with the ability to get information about ip addresses: country, city, state.
+This widget provides your visitors the ability to get information about ip addresses: country, city, state.
 
 == Description ==
 
-Ipgp ip address lookup can be installed as a plugin and it works as a sidebar. It can lookup the IP address a visitor enters in a form, and he will get country, city and state. 
+Ipgp ip address lookup can be installed as a plugin and it works in the  sidebar as a widget or in posts and pages using the shortcode [iplookup] . It can lookup the IP address a visitor enters in a form, and he will get country, city and state. 
 
 == Installation ==
 
@@ -18,7 +18,7 @@ This section describes how to install the plugin and get it working.
 
 1. Upload `ipgp.php` to the `/wp-content/plugins/` directory
 2. Activate the plugin through the 'Plugins' menu in WordPress
-3. Go to 'Appearance' section on your admin panel, and select 'Widgets' submenu
+3. Go to 'Appearance' section on your admin panel, and select 'Widgets' submenu OR add the following shortcode to your posts and pages: [iplookup]
 4. Drag "Ipgp" widget and paste it to your active sidebar, in the place you want it to appear
 
 == Frequently Asked Questions ==
@@ -36,6 +36,9 @@ The current version of plugin is designed to be placed on the sidebar, in the fu
 If your visitors want to lookup an IP address, the page will refresh and then the data will be shonw under the input box.
 
 == Changelog ==
+
+= 0.3 =
+* Added the shortcode [iplookup] to display the ip lookup tool in posts and pages
 
 = 0.2 =
 * Now Internet Service Provider is available
