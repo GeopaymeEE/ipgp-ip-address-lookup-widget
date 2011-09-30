@@ -8,8 +8,6 @@ Version: 0.3
 Author URI: http://www.ipgp.net
 */
 
-add_action('admin_menu', 'create_ipgp_menu');
-add_action('admin_init', 'ipgp_actions');
 
 function ipgpFunction() 
 {
@@ -21,10 +19,9 @@ if($_POST['ipgpvalue']) {
 
 $ip = $ipgpip;
 
-if(get_option('ipgp_api_key')) $api_key = get_option('ipgp_api_key');
-else $api_key = 'wordpressplugin';
 
-$file = "http://www.ipgp.net/api/xml/". $ip ."/".$api_key."";
+
+$file = "http://www.ipgp.net/api/xml/". $ip ."/wordpressplugin";
 
 $iplookup = simplexml_load_file($file);
 
@@ -40,10 +37,10 @@ $iplookup = simplexml_load_file($file);
 		<input type="text" name="ipgpvalue" id="ipgpvalue" size="12" value="<?=$_POST['ipgpvalue']?>" />
 		<input type="submit" name="submit" id="submit" value="Go" />
 		<div id="ipgpresults">
-			<?php if($_POST['ipgpvalue']) { ?><div id="ipgpcountry">Country: <?=$iplookup->Country?></div>
+			<div id="ipgpcountry">Country: <?=$iplookup->Country?></div>
 			<div id="ipgpcity">City <?=$iplookup->City?></div>
 			<div id="ipgpregion">State: <?=$iplookup->Region?></div>
-			<div id="ipgpisp">Isp: <?=$iplookup->Isp?></div> <?php } ?>
+			<div id="ipgpisp">Isp: <?=$iplookup->Isp?></div>
 		</div>
 	</form>
 
@@ -65,29 +62,8 @@ function iplookup_shortcode( $atts ) {
 
 }
 
-function create_ipgp_menu() {
 
-			add_options_page(__('IPGP IP Lookup', 'ipgp_admin_page'), __('IPGP IP Lookup', 'ipgp_admin_page')	, 10, basename(__FILE__), 'ipgp_admin' );
 
-}
-
-function ipgp_admin() {
-$content = '<div style="margin: 25px 0 0 25px;"><h1>IPGP Lookup Plugin</h1><br>Hello! to get your own API Key <a href="http://www.ipgp.net/get-api-key/">CLICK HERE</a>.<br>
-<form name="ipgp_admin_menu_form" action="" method="post">
-Insert you API Key here : <input type="text" name="ipgp_api" value="'.get_option('ipgp_api_key').'" /><br>
-<input type="submit" name="Submit" value="Submit" />
-</form>
-</div>
-';
-echo $content;
-}
-
-function ipgp_actions() {
-if($_POST['ipgp_api'])
-if(!get_option('ipgp_api_key'))
-add_option( 'ipgp_api_key', ''.$_POST['ipgp_api'].'', '', 'yes' );
-else update_option('ipgp_api_key',$_POST['ipgp_api']);
-}
 
 function ipgpInit()
 {

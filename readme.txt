@@ -4,7 +4,7 @@ Donate link: http://www.ipgp.net
 Tags: widget, ip address lookup, ip locator, sidebar, shortcode
 Requires at least: 2.0.2
 Tested up to: 3.2
-Stable tag: 0.4
+Stable tag: 0.5
 
 This widget provides your visitors the ability to get information about ip addresses: country, city, state.
 
@@ -36,6 +36,9 @@ The current version of plugin is designed to be placed on the sidebar, in the fu
 If your visitors want to lookup an IP address, the page will refresh and then the data will be shonw under the input box.
 
 == Changelog ==
+
+= 0.5 = 
+* Added a page in administration where the API key can be changed
 
 = 0.4 = 
 * Added API key support to the plugin
