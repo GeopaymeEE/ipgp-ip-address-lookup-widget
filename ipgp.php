@@ -4,7 +4,7 @@ Plugin Name: Ipgp ip address lookup
 Plugin URI: http://www.ipgp.net
 Description: Find information about ip address.
 Author: Lucian Apostol
-Version: 0.3
+Version: 0.5
 Author URI: http://www.ipgp.net
 */
 
