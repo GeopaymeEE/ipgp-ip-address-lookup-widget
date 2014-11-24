@@ -4,7 +4,7 @@ Plugin Name: Ipgp ip address lookup
 Plugin URI: http://www.ipgp.net
 Description: Find information about ip address.
 Author: Lucian Apostol
-Version: 0.5
+Version: 0.6
 Author URI: http://www.ipgp.net
 */
 
@@ -89,12 +89,12 @@ add_option( 'ipgp_api_key', ''.$_POST['ipgp_api'].'', '', 'yes' );
 else update_option('ipgp_api_key',$_POST['ipgp_api']);
 }
 
-function ipgpInit()
+function ipgpLookupInit()
 {
   register_sidebar_widget(__('Ip lookup'), 'ipgpWidget');  
   add_shortcode( 'iplookup', 'iplookup_shortcode' );
 }
 
 
-add_action("plugins_loaded", "ipgpInit");
+add_action("plugins_loaded", "ipgpLookupInit");
 ?>
