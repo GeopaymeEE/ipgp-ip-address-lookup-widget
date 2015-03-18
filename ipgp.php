@@ -4,7 +4,7 @@ Plugin Name: Ipgp ip address lookup
 Plugin URI: http://www.ipgp.net
 Description: Find information about ip address.
 Author: Lucian Apostol
-Version: 0.6
+Version: 0.7
 Author URI: http://www.ipgp.net
 */
 
@@ -72,9 +72,9 @@ function create_ipgp_menu() {
 }
 
 function ipgp_admin() {
-$content = '<div style="margin: 25px 0 0 25px;"><h1>IPGP Lookup Plugin</h1><br>Hello! to get your own API Key <a href="http://www.ipgp.net/get-api-key/">CLICK HERE</a>.<br>
+$content = '<div style="margin: 25px 0 0 25px;"><h1>IPGP Lookup Plugin</h1><br>Hello! to get your own API Key <a href="http://www.ipgp.net/get-api-key/">CLICK HERE</a>.<br /><br />
 <form name="ipgp_admin_menu_form" action="" method="post">
-Insert you API Key here : <input type="text" name="ipgp_api" value="'.get_option('ipgp_api_key').'" /><br>
+Insert you API Key here : <input type="text" name="ipgp_api" value="'.get_option('ipgp_api_key').'" /><br /><br />
 <input type="submit" name="Submit" value="Submit" />
 </form>
 </div>
